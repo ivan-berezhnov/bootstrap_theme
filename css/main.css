@@ -1,3 +1,16 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400,500,700);
+/* font-family: "ICOMOON"; */
+@font-face {
+  font-family: "Icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icomoon/fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/fonts/icomoon.woff") format("woff"), url("../fonts/icomoon/fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon/fonts/icomoon.svg#Icomoon") format("svg"); }
+
+/*
+ * IcoMoon
+ * see @ http://jshak.es/easy-icomoon-icons-with-sass/
+ */
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -478,7 +491,7 @@ pre {
     padding-left: 0; }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
-.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .header_info--branding, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .header_info--branding, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .header_info--user-tools, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
 .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
@@ -698,7 +711,7 @@ pre {
     -ms-flex: 0 0 66.66667%;
         flex: 0 0 66.66667%;
     max-width: 66.66667%; }
-  .col-sm-9 {
+  .col-sm-9, .header_info--user-tools {
     -ms-flex: 0 0 75%;
         flex: 0 0 75%;
     max-width: 75%; }
@@ -4844,7 +4857,7 @@ button.bg-dark:focus {
 .border-left {
   border-left: 1px solid #dee2e6 !important; }
 
-.border-0 {
+.border-0, .dropdown-menu {
   border: 0 !important; }
 
 .border-top-0 {
@@ -4931,7 +4944,7 @@ button.bg-dark:focus {
 .d-none {
   display: none !important; }
 
-.d-inline {
+.d-inline, .header_top--phone .dropdown {
   display: inline !important; }
 
 .d-inline-block {
@@ -4949,7 +4962,7 @@ button.bg-dark:focus {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex {
+.d-flex, .header_info--user-tools, .header_info--user-tools a, .header_menu--catalog .nav-link, .header_menu--search, .header_menu--search .search-form, .header_menu--basket {
   display: -ms-flexbox !important;
   display: flex !important; }
 
@@ -5153,11 +5166,11 @@ button.bg-dark:focus {
   -ms-flex-pack: start !important;
       justify-content: flex-start !important; }
 
-.justify-content-end {
+.justify-content-end, .header_info--user-tools {
   -ms-flex-pack: end !important;
       justify-content: flex-end !important; }
 
-.justify-content-center {
+.justify-content-center, .header_menu--basket {
   -ms-flex-pack: center !important;
       justify-content: center !important; }
 
@@ -5177,7 +5190,7 @@ button.bg-dark:focus {
   -ms-flex-align: end !important;
       align-items: flex-end !important; }
 
-.align-items-center {
+.align-items-center, .header_info--user-tools a, .header_menu--catalog .nav-link, .header_menu--search, .header_menu--basket {
   -ms-flex-align: center !important;
       align-items: center !important; }
 
@@ -5770,7 +5783,7 @@ button.bg-dark:focus {
   clip: auto;
   white-space: normal; }
 
-.shadow-sm {
+.shadow-sm, .dropdown-menu {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
 
 .shadow {
@@ -5841,7 +5854,7 @@ button.bg-dark:focus {
   content: "";
   background-color: rgba(0, 0, 0, 0); }
 
-.m-0 {
+.m-0, .header_menu--search .form-group {
   margin: 0 !important; }
 
 .mt-0,
@@ -5882,15 +5895,15 @@ button.bg-dark:focus {
 .m-2 {
   margin: 0.5rem !important; }
 
-.mt-2,
+.mt-2, .header_top .dropdown-menu,
 .my-2 {
   margin-top: 0.5rem !important; }
 
-.mr-2,
+.mr-2, .header_info--user-tools a:before, .header_menu--basket .btn:before,
 .mx-2 {
   margin-right: 0.5rem !important; }
 
-.mb-2,
+.mb-2, .header_top,
 .my-2 {
   margin-bottom: 0.5rem !important; }
 
@@ -5905,7 +5918,7 @@ button.bg-dark:focus {
 .my-3 {
   margin-top: 1rem !important; }
 
-.mr-3,
+.mr-3, .header_menu--catalog .nav-link:before,
 .mx-3 {
   margin-right: 1rem !important; }
 
@@ -5951,33 +5964,33 @@ button.bg-dark:focus {
 .my-5 {
   margin-bottom: 3rem !important; }
 
-.ml-5,
+.ml-5, .header_info--user-tools a,
 .mx-5 {
   margin-left: 3rem !important; }
 
 .p-0, .header_top .navbar {
   padding: 0 !important; }
 
-.pt-0,
+.pt-0, .dropdown-menu,
 .py-0 {
   padding-top: 0 !important; }
 
-.pr-0,
+.pr-0, .header_menu--catalog,
 .px-0 {
   padding-right: 0 !important; }
 
-.pb-0,
+.pb-0, .dropdown-menu,
 .py-0 {
   padding-bottom: 0 !important; }
 
-.pl-0, .header_top .nav-link,
+.pl-0, .header_top .nav-link, .header_menu--catalog,
 .px-0 {
   padding-left: 0 !important; }
 
 .p-1 {
   padding: 0.25rem !important; }
 
-.pt-1,
+.pt-1, .header_top .nav-link, .header_top .dropdown, .header_top--phone, .header_menu--catalog .dropdown-item,
 .py-1 {
   padding-top: 0.25rem !important; }
 
@@ -5985,7 +5998,7 @@ button.bg-dark:focus {
 .px-1 {
   padding-right: 0.25rem !important; }
 
-.pb-1,
+.pb-1, .header_top .nav-link, .header_top--phone, .header_menu--catalog .dropdown-item,
 .py-1 {
   padding-bottom: 0.25rem !important; }
 
@@ -5996,7 +6009,7 @@ button.bg-dark:focus {
 .p-2 {
   padding: 0.5rem !important; }
 
-.pt-2,
+.pt-2, .dropdown-item,
 .py-2 {
   padding-top: 0.5rem !important; }
 
@@ -6004,7 +6017,7 @@ button.bg-dark:focus {
 .px-2 {
   padding-right: 0.5rem !important; }
 
-.pb-2,
+.pb-2, .dropdown-item,
 .py-2 {
   padding-bottom: 0.5rem !important; }
 
@@ -6015,7 +6028,7 @@ button.bg-dark:focus {
 .p-3 {
   padding: 1rem !important; }
 
-.pt-3, .header_top .nav-link, .header_top .dropdown, .header_top--phone, .header_info,
+.pt-3, .header_info, .header_menu--catalog .nav-link,
 .py-3 {
   padding-top: 1rem !important; }
 
@@ -6023,7 +6036,7 @@ button.bg-dark:focus {
 .px-3 {
   padding-right: 1rem !important; }
 
-.pb-3, .header_top .nav-link, .header_info,
+.pb-3, .header_info, .header_menu--catalog .nav-link,
 .py-3 {
   padding-bottom: 1rem !important; }
 
@@ -6046,7 +6059,7 @@ button.bg-dark:focus {
 .py-4 {
   padding-bottom: 1.5rem !important; }
 
-.pl-4,
+.pl-4, .header_menu--catalog .nav-link,
 .px-4 {
   padding-left: 1.5rem !important; }
 
@@ -7260,7 +7273,7 @@ button.bg-dark:focus {
 .text-lowercase {
   text-transform: lowercase !important; }
 
-.text-uppercase, .header_info--branding {
+.text-uppercase, .header_info--branding, .header_menu--catalog .nav-link {
   text-transform: uppercase !important; }
 
 .text-capitalize {
@@ -7439,7 +7452,7 @@ body {
 
 .header_top {
   color: #ced4da;
-  background-color: #f5f5f5; }
+  background-color: whitesmoke; }
   .header_top a {
     color: #6c757d;
     font-size: .8rem; }
@@ -7450,12 +7463,134 @@ body {
 
 .header_info--branding {
   letter-spacing: .2rem; }
-  .header_info--branding a {
-    color: #000; }
-    .header_info--branding a:hover, .header_info--branding a:focus {
-      text-decoration: none;
-      color: #000; }
+  .header_info--branding a:hover, .header_info--branding a:focus {
+    text-decoration: none; }
   .header_info--branding span {
-    color: #92dd45; }
+    color: #000; }
+
+.header_info--user-tools a {
+  color: #6c757d;
+  font-size: .9rem;
+  font-weight: 300;
+  text-decoration: none;
+  word-wrap: break-word; }
+  .header_info--user-tools a:before {
+    max-width: 100px;
+    font-size: 2rem;
+    font-weight: 400; }
+  .header_info--user-tools a:hover, .header_info--user-tools a:focus {
+    color: #3d4246; }
+
+.header_info .user_tool--delivery a:before {
+  content: "";
+  font-family: 'Icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.header_info .user_tool--copy a:before {
+  content: "";
+  font-family: 'Icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.header_info .user_tool--favorite a:before {
+  content: "";
+  font-family: 'Icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.header_info .user_tool--user a:before {
+  content: "";
+  font-family: 'Icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.header_menu {
+  background: #1C1C1C; }
+  .header_menu--catalog .nav-link {
+    color: #fff;
+    letter-spacing: .05rem;
+    font-weight: 300; }
+    .header_menu--catalog .nav-link:before {
+      content: "";
+      font-family: 'Icomoon';
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+    .header_menu--catalog .nav-link:before {
+      color: #fff;
+      font-size: 1.2rem; }
+  .header_menu--catalog .dropdown-menu {
+    width: 100%; }
+  .header_menu--search {
+    background-color: #343a40; }
+    .header_menu--search .search-form {
+      width: 100%; }
+    .header_menu--search .form-group {
+      width: calc(100% - 42px); }
+    .header_menu--search button:after {
+      content: "";
+      font-family: 'Icomoon';
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+  .header_menu--basket .btn {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    color: #fff; }
+    .header_menu--basket .btn:before {
+      content: "";
+      font-family: 'Icomoon';
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
 
 /*# sourceMappingURL=maps/main.css.map */

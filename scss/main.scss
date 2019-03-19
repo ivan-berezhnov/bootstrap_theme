@@ -3,7 +3,9 @@
 @import "../node_modules/bootstrap/scss/functions";
 
 // Custom theme settings
+@import "../node_modules/bourbon/app/assets/stylesheets/bourbon";
 @import "variables";
+@import "icomoon/**.scss";
 
 // Bootstrap
 @import "../node_modules/bootstrap/scss/mixins";
